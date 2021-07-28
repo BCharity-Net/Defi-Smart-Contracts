@@ -5,7 +5,7 @@ pragma solidity 0.6.12;
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.1.0/contracts/access/Ownable.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.1.0/contracts/token/ERC20/ERC20.sol";
 
-contract FishToken is ERC20("Fish", "FISH"), Ownable {
+contract GiveToken is ERC20("Give", "GIVE"), Ownable {
     
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
